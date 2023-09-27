@@ -34,7 +34,7 @@ export const createProduct = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.status(300).json({
-        status:"something is not right"
+        status:error
     })
   }
 };
